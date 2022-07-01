@@ -1,0 +1,54 @@
+body {
+  background: #000;
+  color: #fff;
+  margin: 0;
+}
+
+body .matrix {
+  width: 50em;
+  margin: 0 auto;
+}
+
+body .matrix p {
+  font-size: 1.3em;
+  text-orientation: upright;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: inline-block;
+}
+
+body .matrix p span {
+  -webkit-animation: matrix 1.5s linear infinite;
+          animation: matrix 1.5s linear infinite;
+  opacity: 0;
+}
+
+@-webkit-keyframes matrix {
+  0% {
+    color: #fff;
+    opacity: 1;
+  }
+  5% {
+    color: #2bc235;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes matrix {
+  0% {
+    color: #fff;
+    opacity: 1;
+  }
+  5% {
+    color: #2bc235;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
